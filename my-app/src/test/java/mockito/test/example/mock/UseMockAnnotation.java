@@ -17,6 +17,7 @@ import static org.mockito.Mockito.when;
  */
 public class UseMockAnnotation extends MockitoTestBase {
     private static final String USER = "Mike Xie";
+    //If use @Mock annotation: Important! This needs to be somewhere in the base class or a test runner:
     @Mock private List mockedList;
     @Test
     public void show_case_about_use_Mock_annotation_to_mock_one_object() {
